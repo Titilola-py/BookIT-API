@@ -207,6 +207,7 @@ https://bookit-api.onrender.com/docs
 ## Author
 
 **Fatimah Olaitan**
+
 Backend Engineer | AltSchool Africa Diploma in Backend Engineering (2025)
 
 ---
