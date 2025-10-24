@@ -42,7 +42,7 @@ MongoDB works well for unstructured data or flexible schemas, but BookIT’s use
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/BookIT-API.git
+git clone https://github.com/Titilola-py/BookIT-API.git
 cd BookIT-API
 ```
 
@@ -204,10 +204,13 @@ https://bookit-api.onrender.com/docs
 
 ---
 
-## Author
+## Author 
+**FATIMAH OLAITAN** 
 
-**Fatimah Olaitan**
+**GitHub**: [@Titilola-py](https://github.com/Titilola-py) **Email**: olaitantitilola2@gmail.com
+**LinkedIn**: [Connect with me](https://www.linkedin.com/in/fatimah-olaitan-4bb6602a4/) 
 
-Backend Engineer | AltSchool Africa Diploma in Backend Engineering (2025)
-
+--- 
+## License 
+This project is licensed under the **MIT License** 
 ---
