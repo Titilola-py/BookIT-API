@@ -20,8 +20,8 @@ Why PostgreSQL?
 Chosen Database: PostgreSQL
 
 BookIT uses PostgreSQL instead of MongoDB because the project handles structured and relational data — like users, bookings, and services that depend on foreign keys and transactions. PostgreSQL ensures accuracy, supports complex joins, and maintains data integrity.
-
 MongoDB works well for unstructured data or flexible schemas, but BookIT’s use case requires strong relationships and consistency, making PostgreSQL the better fit.
+
 ---
 
 ## Tech Stack
