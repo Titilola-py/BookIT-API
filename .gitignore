@@ -1,0 +1,6 @@
+.env
+menv
+__pycache__
+*.pyc
+.pytest_cache
+instance
