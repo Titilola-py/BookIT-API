@@ -91,42 +91,77 @@ uvicorn main:app --reload
 Visit [http://localhost:8000/docs](http://localhost:8000/docs) for the interactive API documentation.
 
 ---
+### Data Models
 
-## Example Data for Testing
-
-### Babysitting Service
-
+#### User
 ```json
 {
+  "id": "uuid",
+  "name": "John Doe",
+  "email": "john@example.com",
+  "role": "user|admin",
+  "is_active": true,
+  "status": "active",
+  "created_at": "2025-09-27T00:00:00Z"
+}
+```
+
+#### Service
+```json
+{
+  "id": "uuid",
   "title": "Babysitting",
-  "description": "Professional babysitting service for children aged 2 to 10 years.",
-  "price": 45.50,
-  "duration_minutes": 180
-}
-```
-
-### Cleaning Service
-
-```json
-{
-  "title": "Home Cleaning",
-  "description": "Comprehensive home cleaning service with eco-friendly supplies.",
+  "description": "Professional babysitter",
   "price": 99.99,
-  "duration_minutes": 120
+  "duration_minutes": 360,
+  "is_active": true,
+  "owner_id": "uuid",
+  "created_at": "2025-09-27T00:00:00Z"
 }
 ```
 
-### Tutoring Service
-
+#### Booking
 ```json
 {
-  "title": "Math Tutoring",
-  "description": "Private math tutoring sessions for secondary school students.",
-  "price": 60.00,
-  "duration_minutes": 90
+  "id": "uuid",
+  "user_id": "uuid",
+  "service_id": "uuid",
+  "start_time": "2025-09-28T10:00:00Z",
+  "end_time": "2025-09-28T12:00:00Z",
+  "status": "pending|confirmed|cancelled|completed",
+  "created_at": "2025-09-27T00:00:00Z"
 }
 ```
 
+#### Review
+```json
+{
+  "id": "uuid",
+  "booking_id": "uuid",
+  "rating": 5,
+  "comment": "Excellent service!",
+  "created_at": "2025-09-27T00:00:00Z"
+}
+```
+---
+### Example User Logins(production)
+URL: https://bookit-api-11wq.onrender.com/docs
+``` json 
+{
+  "email": "titilola@example.com",
+  "name": "titi",
+  "role": "admin",
+  "password": "stringst"
+}
+```
+``` json
+{
+  "email": "titi@example.com",
+  "name": "titi",
+  "role": "user",
+  "password": "stringst"
+}
+```
 ---
 
 ## Deployment on Render
